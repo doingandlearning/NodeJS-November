@@ -21,10 +21,7 @@ drawings:
 
 Kevin Cunningham
 
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
+Grab repo at https://github.com/doingandlearning/NodeJS-November
 
 ---
 
@@ -56,7 +53,7 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 | Node module system | Express | 
 | Async control flow | RESTful Services |
 | Node event system | SQL with Node | 
-| Error handling | MongoDB with Node |
+| Error handling |  |
 
 ---
 
