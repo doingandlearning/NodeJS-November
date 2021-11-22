@@ -57,6 +57,20 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 
 ---
 
+# Timings
+
+| | |
+| --- | --- |
+| 9.30 - 11 | Session 1 |
+| 11 - 11.15 | Coffee |
+| 11.15 - 12.45 | Session 2 |
+| 12.45 - 1.45 | Lunch |
+| 1.45 - 3.15 | Session 3 |
+| 3.15 - 3.30 | Coffee |
+| 3.30 - 4.30 | Session 4 | 
+
+---
+
 # A bit about you
 
 - Name
@@ -67,12 +81,19 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 
 # What is Node.js?
 
-<h2 v-click>Characteristics of Node</h2>
+![The Event Loop](https://i.stack.imgur.com/Lbs9z.png)
+
+Open source, free, cross-platform, JS on the server, event-driven, non-blocking, asynchronous, scalable
+---
+
+# Characteristics of Node
+
 <ul v-click="2">
   <li v-click="2">Google Chrome V8 JavaScript Engine</li>
   <li v-click="3">Modules/Packages</li>
   <li v-click="4">Event Driven, Single-Threaded I/O Model</li>
 </ul>
+
 ---
 
 # Open up a terminal
