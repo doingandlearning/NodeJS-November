@@ -14,11 +14,6 @@ let id = 1;
 
 const app = http.createServer();
 
-// TODO:
-// - Add CRUD functionality to our in memory userStore over HTTP
-// - Decide if route or verb is the right way to handle it
-// -
-
 app.on("request", (request, response) => {
   if (request.method === "POST") {
     handlePost(request, response);
@@ -29,16 +24,6 @@ app.on("request", (request, response) => {
   } else if (request.method === "GET") {
     handleGet(request, response);
   }
-  // let body = [];
-  // request.on("data", (bodyData) => body.push(bodyData));
-  // request.on("end", () => {
-  //   body = Buffer.concat(body).toString();
-  //   console.log(`Request Body Contents: ${body}`);
-  //   response.write(
-  //     `<code>Request Body Contents: ${JSON.stringify(body)}</code>`
-  //   );
-  //   response.end();
-  // });
 });
 
 function handlePost(request, response) {
@@ -59,7 +44,10 @@ function handlePost(request, response) {
 function handleGet(request, response) {
   const id = request.url.split("/")[1];
   if (id) {
-    // some logic in here
+    response.writeHead(200, { "Content-Type": "application/json" });
+    response.write(
+      JSON.stringify(userStore.filter((user) => user.id === id))[0]
+    );
   } else {
     response.writeHead(200, { "Content-Type": "application/json" });
     response.write(JSON.stringify(userStore));
