@@ -23,6 +23,14 @@ drawings:
 
 ---
 
+# While we get back from lunch, could you go to https://gist.github.com/ and create a new Gist for your http server from yesterday?
+
+# Share your link in the chat
+- Look at a few versions of the code
+- Make a note of some things you liked and disliked (about http server rather than your colleague's code)
+
+---
+
 By the end of this section:
 
 - Understand REST architecture
@@ -213,5 +221,12 @@ layout: two-cols
 
 ---
 
-# Exercises
+# Exercise
+
+1. Refactor our http based API to Express. A completed version is in the labs folder.
+
+Can you:
+- Extract the route into a separate file/folder
+- Parse and send JSON
+- 
 

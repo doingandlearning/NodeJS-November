@@ -3,7 +3,9 @@ const fs = require("fs");
 const assert = require("assert");
 
 async function read(file) {
-  const content = await fs.promises.readFile(file);
+  const content = await fs.promises.readFile(file).catch(() => {
+    throw new Error("failed to read");
+  });
   return content;
 }
 

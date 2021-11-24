@@ -5,6 +5,7 @@ const print = (err, contents) => {
   else console.log(contents);
 };
 
+const printPromise = promisify(print);
 const opA = (cb) => {
   setTimeout(() => {
     cb(null, "A");
@@ -17,8 +18,12 @@ const opB = (cb) => {
   }, 250);
 };
 
-const opC = (cb) => {
+const opC = (_, cb) => {
   setTimeout(() => {
     cb(null, "C");
   }, 125);
 };
+
+opA(printPromise().then(() => console.log("I was thened")));
+opB(printPromise.then(() => console.log("I was thened")));
+opC(printPromise.then(() => console.log("I was thened")));

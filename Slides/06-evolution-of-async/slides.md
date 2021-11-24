@@ -24,6 +24,15 @@ drawings:
 
 ---
 
+# Morning 👋🏻
+
+While you get comfortable, can you:
+
+- Pull the latest changes from our repo 
+- Think about your biggest takeaway/question from Monday
+
+---
+
 By the end of this section, you should be able to:
 - Understand native asynchronous primitives.
 - Understand serial and parallel control flow with callbacks.

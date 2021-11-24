@@ -2,8 +2,14 @@
 const assert = require("assert");
 
 function parseUrl(str) {
-  const parsed = new URL(str);
-  return parsed;
+  try {
+    const parsed = new URL(str).catch(() => {
+      throw new Error("failed to read");
+    });
+    return parsed;
+  } catch (error) {
+    return null;
+  }
 }
 
 assert.doesNotThrow(() => {
